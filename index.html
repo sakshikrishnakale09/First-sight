@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love | Page 1</title>
+    <style>
+        /* Embedded CSS for Page 1 */
+        body {
+            background: #fff5f5;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        .teddy {
+            position: absolute;
+            width: 120px;
+            opacity: 0.7;
+            animation: float 6s infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .start-button {
+            background: #ff6b8b;
+            color: white;
+            padding: 15px 40px;
+            font-size: 24px;
+            border: none;
+            border-radius: 50px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1 Content -->
+    <img src="IMG_3728.jpg" class="teddy" style="top:15%; left:10%;">
+    <img src="IMG_3682.jpg" class="teddy" style="top:25%; right:12%;">
+    
+    <button class="start-button" onclick="window.location.href='love-letter.html'">
+        Let's journey begin
+    </button>
+
+    <!-- Embedded JS -->
+    <script>
+        // Background music control
+        const audio = new Audio('https://files.catbox.moe/a3xmwz.mp3');
+        audio.loop = true;
+        document.body.addEventListener('click', () => audio.play());
+    </script>
+</body>
+</html>
