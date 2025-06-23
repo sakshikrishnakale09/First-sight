@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories</title>
+    <style>
+        /* Embedded CSS for Page 3 */
+        body {
+            background: #fff9f0;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 10px;
+        }
+        .photo-grid img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-grid">
+        <img src="IMG_2265.jpg" alt="Memory 1">
+        <img src="IMG_2259.jpg" alt="Memory 2">
+        <img src="IMG_1840.jpg" alt="Memory 3">
+        <img src="IMG_8587.jpg" alt="Memory 4">
+        <img src="IMG_8843.jpg" alt="Memory 5">
+        <img src="IMG_4085.jpg" alt="Memory 6">
+    </div>
+
+    <script>
+        const audio = new Audio('https://files.catbox.moe/c9q9l5.mp3');
+        audio.loop = true;
+        window.onload = () => audio.play();
+    </script>
+</body>
+</html>
